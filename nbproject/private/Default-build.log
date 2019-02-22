@@ -1,0 +1,41 @@
+gcc -Wall  -L./ -m32  -c binsem.c
+ar rcu libbinsem.a binsem.o
+ranlib libbinsem.a
+gcc -Wall  -L./ -m32  -c ut.c
+ar rcu libut.a ut.o
+ranlib libut.a
+gcc -Wall  -L./ -m32 ph.c -lbinsem -lut -o ph
+/usr/lib/gcc/x86_64-pc-cygwin/7.3.0/../../../../x86_64-pc-cygwin/bin/ld: skipping incompatible /usr/lib/gcc/x86_64-pc-cygwin/7.3.0//libgcc_s.dll.a when searching for -lgcc_s
+/usr/lib/gcc/x86_64-pc-cygwin/7.3.0/../../../../x86_64-pc-cygwin/bin/ld: skipping incompatible /usr/lib/gcc/x86_64-pc-cygwin/7.3.0/libgcc_s.dll.a when searching for -lgcc_s
+/usr/lib/gcc/x86_64-pc-cygwin/7.3.0/../../../../x86_64-pc-cygwin/bin/ld: skipping incompatible /usr/lib/gcc/x86_64-pc-cygwin/7.3.0//libgcc_s.dll.a when searching for -lgcc_s
+/usr/lib/gcc/x86_64-pc-cygwin/7.3.0/../../../../x86_64-pc-cygwin/bin/ld: skipping incompatible /usr/lib/gcc/x86_64-pc-cygwin/7.3.0/libgcc_s.dll.a when searching for -lgcc_s
+/usr/lib/gcc/x86_64-pc-cygwin/7.3.0/../../../../x86_64-pc-cygwin/bin/ld: cannot find -lgcc_s
+/usr/lib/gcc/x86_64-pc-cygwin/7.3.0/../../../../x86_64-pc-cygwin/bin/ld: skipping incompatible /usr/lib/gcc/x86_64-pc-cygwin/7.3.0//libgcc.a when searching for -lgcc
+/usr/lib/gcc/x86_64-pc-cygwin/7.3.0/../../../../x86_64-pc-cygwin/bin/ld: skipping incompatible /usr/lib/gcc/x86_64-pc-cygwin/7.3.0//libgcc.a when searching for -lgcc
+/usr/lib/gcc/x86_64-pc-cygwin/7.3.0/../../../../x86_64-pc-cygwin/bin/ld: skipping incompatible /usr/lib/gcc/x86_64-pc-cygwin/7.3.0/libgcc.a when searching for -lgcc
+/usr/lib/gcc/x86_64-pc-cygwin/7.3.0/../../../../x86_64-pc-cygwin/bin/ld: skipping incompatible /usr/lib/gcc/x86_64-pc-cygwin/7.3.0/libgcc.a when searching for -lgcc
+/usr/lib/gcc/x86_64-pc-cygwin/7.3.0/../../../../x86_64-pc-cygwin/bin/ld: skipping incompatible /usr/lib/gcc/x86_64-pc-cygwin/7.3.0//libgcc.a when searching for -lgcc
+/usr/lib/gcc/x86_64-pc-cygwin/7.3.0/../../../../x86_64-pc-cygwin/bin/ld: skipping incompatible /usr/lib/gcc/x86_64-pc-cygwin/7.3.0/libgcc.a when searching for -lgcc
+/usr/lib/gcc/x86_64-pc-cygwin/7.3.0/../../../../x86_64-pc-cygwin/bin/ld: cannot find -lgcc
+/usr/lib/gcc/x86_64-pc-cygwin/7.3.0/../../../../x86_64-pc-cygwin/bin/ld: skipping incompatible /usr/lib/gcc/x86_64-pc-cygwin/7.3.0/../../../libcygwin.a when searching for -lcygwin
+/usr/lib/gcc/x86_64-pc-cygwin/7.3.0/../../../../x86_64-pc-cygwin/bin/ld: skipping incompatible /usr/lib/gcc/x86_64-pc-cygwin/7.3.0/../../../libcygwin.a when searching for -lcygwin
+/usr/lib/gcc/x86_64-pc-cygwin/7.3.0/../../../../x86_64-pc-cygwin/bin/ld: skipping incompatible /usr/lib/gcc/x86_64-pc-cygwin/7.3.0/../../../libcygwin.a when searching for -lcygwin
+/usr/lib/gcc/x86_64-pc-cygwin/7.3.0/../../../../x86_64-pc-cygwin/bin/ld: cannot find -lcygwin
+/usr/lib/gcc/x86_64-pc-cygwin/7.3.0/../../../../x86_64-pc-cygwin/bin/ld: cannot find -ladvapi32
+/usr/lib/gcc/x86_64-pc-cygwin/7.3.0/../../../../x86_64-pc-cygwin/bin/ld: cannot find -lshell32
+/usr/lib/gcc/x86_64-pc-cygwin/7.3.0/../../../../x86_64-pc-cygwin/bin/ld: cannot find -luser32
+/usr/lib/gcc/x86_64-pc-cygwin/7.3.0/../../../../x86_64-pc-cygwin/bin/ld: cannot find -lkernel32
+/usr/lib/gcc/x86_64-pc-cygwin/7.3.0/../../../../x86_64-pc-cygwin/bin/ld: skipping incompatible /usr/lib/gcc/x86_64-pc-cygwin/7.3.0//libgcc_s.dll.a when searching for -lgcc_s
+/usr/lib/gcc/x86_64-pc-cygwin/7.3.0/../../../../x86_64-pc-cygwin/bin/ld: skipping incompatible /usr/lib/gcc/x86_64-pc-cygwin/7.3.0/libgcc_s.dll.a when searching for -lgcc_s
+/usr/lib/gcc/x86_64-pc-cygwin/7.3.0/../../../../x86_64-pc-cygwin/bin/ld: skipping incompatible /usr/lib/gcc/x86_64-pc-cygwin/7.3.0//libgcc_s.dll.a when searching for -lgcc_s
+/usr/lib/gcc/x86_64-pc-cygwin/7.3.0/../../../../x86_64-pc-cygwin/bin/ld: skipping incompatible /usr/lib/gcc/x86_64-pc-cygwin/7.3.0/libgcc_s.dll.a when searching for -lgcc_s
+/usr/lib/gcc/x86_64-pc-cygwin/7.3.0/../../../../x86_64-pc-cygwin/bin/ld: cannot find -lgcc_s
+/usr/lib/gcc/x86_64-pc-cygwin/7.3.0/../../../../x86_64-pc-cygwin/bin/ld: skipping incompatible /usr/lib/gcc/x86_64-pc-cygwin/7.3.0//libgcc.a when searching for -lgcc
+/usr/lib/gcc/x86_64-pc-cygwin/7.3.0/../../../../x86_64-pc-cygwin/bin/ld: skipping incompatible /usr/lib/gcc/x86_64-pc-cygwin/7.3.0//libgcc.a when searching for -lgcc
+/usr/lib/gcc/x86_64-pc-cygwin/7.3.0/../../../../x86_64-pc-cygwin/bin/ld: skipping incompatible /usr/lib/gcc/x86_64-pc-cygwin/7.3.0/libgcc.a when searching for -lgcc
+/usr/lib/gcc/x86_64-pc-cygwin/7.3.0/../../../../x86_64-pc-cygwin/bin/ld: skipping incompatible /usr/lib/gcc/x86_64-pc-cygwin/7.3.0/libgcc.a when searching for -lgcc
+/usr/lib/gcc/x86_64-pc-cygwin/7.3.0/../../../../x86_64-pc-cygwin/bin/ld: skipping incompatible /usr/lib/gcc/x86_64-pc-cygwin/7.3.0//libgcc.a when searching for -lgcc
+/usr/lib/gcc/x86_64-pc-cygwin/7.3.0/../../../../x86_64-pc-cygwin/bin/ld: skipping incompatible /usr/lib/gcc/x86_64-pc-cygwin/7.3.0/libgcc.a when searching for -lgcc
+/usr/lib/gcc/x86_64-pc-cygwin/7.3.0/../../../../x86_64-pc-cygwin/bin/ld: cannot find -lgcc
+collect2: error: ld returned 1 exit status
+make: *** [Makefile:8: ph] Error 1
